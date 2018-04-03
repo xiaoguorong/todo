@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+.swiper-container {
+    width: 100vw;
+    height: 30vh;
+}  
+.swiper-slide {
+    background: red;
+}
+.type{
+	width: 100vw;
+	height: 10vh;
+}
+.project,.done{
+	width: 50vw;
+	height: 10vh;
+	float: left;
+	text-align: center;
+	line-height: 10vh;
+	font-size: 18px;
+	font-weight: 800;
+	background: #333;
+}
+.project.active{
+	background: #3f3;
+}
+.done.active{
+	background: #33f;
+}
+.content{
+	width: 100vw;
+	height: 50vh;
+	background: #fff;
+	overflow: hidden;
+	position: relative;/* //滚动条条定位 */
+}
+.content ul{
+	width: 100vw;
+	height: auto;
+}
+.content ul li{
+	width: 100vw;
+	height: 6vh;
+	position: relative;
+	line-height: 6vh;
+}
+.itemlist li p{
+	width: 60vw;
+	height: 6vh;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.itemlist li time{
+	width: 30vw;
+	height: 6vh;
+	float: left;
+	line-height: 3vh;
+}
+.itemlist li span{
+	width: 10vw;
+	height: 6vh;
+	float: left;
+}
+.itemlist li span.active{
+	color: red;
+}
+.add{
+	width: 100vw;
+	height: 10vh;
+	background: red;
+	line-height: 10vh;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+}
+.itemlist li div{
+	width: 20vw;
+	height: 6vh;
+	color: #fff;
+	text-align: center;
+	line-height: 8vh;
+	position: absolute;
+	right: -20vw;
+	top: 0;
+	background: red;
+}
+.mask{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.67);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	display: none;
+}
+#text{
+	width: 100vw;
+	height: 40vh;
+	border: none;
+	resize: none;
+	padding: 10vw;
+	font-size: 16px;
+	display: block;
+}
+.inputarea{
+	width: 100vw;
+	height: 62vh;
+	transform: translateY(-62vh);
+}
+.submit,.update{
+	width: 100vw;
+	height: 10vh;
+	background: #f33;
+	text-align: center;
+	line-height: 10vh;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+}
+.cancel{
+	width: 6vh;
+	height: 6vh;
+	margin: 3vh auto;
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 6vh;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 50%;
+}
